@@ -1,0 +1,275 @@
+<!-- Alumno: Cristian Daniel Maldonado Chalco -->
+
+<!DOCTYPE html>
+<!-- Definir lenguaje -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de productos</title>
+    <!-- Estilo con boostrap primero -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <!-- Cargar el estilo personalizado -->
+    <link rel="stylesheet" href="Diseño.css">
+</head>
+
+<body>
+    <!-- logo de whatsapp -->
+    <div>
+        <a target="_blank" href=" https://wa.me/51952234265?text=Hola">
+            <img id="contacto" src="WhatsApp.png" alt="contacto de whatsapp">
+        </a>
+
+
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>COMPRALO YA!!</h1> <!-- Titulo 1 -->
+        <h2>Si lo necesitas lo encuentras</h2> <!-- Titulo 2 -->
+
+
+    </header>
+    <!-- barra de menu -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">COMPRALO YA!!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Formulario.html">Registrate</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#CarritoModal">Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
+
+    <!-- Modal -->
+    <div class="modal fade" id="CarritoModal" tabindex="-1" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id = "carrito">
+                        <img id="carritovacio"  class="img-fluid mx-auto d-block"  src="Carrito.jpg" alt="Carro de compras">
+                        <figcaption class="text-center">Actualmente usted no cuenta con ningun producto.</figcaption>
+
+                    </div>
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary disabled">Cotizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Parte principal  -->
+    <main class="pageCatalogo container">
+        <!-- Crear la seccion catalogo -->
+        <section class="row" id="Catalogo">
+            <!-- Articulo 01 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen01.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <Bebas+Neueh3>ZAPATILLAS URBANAS ADIDAS </h3>
+                    <p>
+                        <span class="Preciofinal">S/ 149</span> <span class="Descuento">-50%</span><br>
+                        <span class="Preciooriginal">S/ 299</span>
+                    </p>
+                    <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 02 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen02.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS URBANAS ADIDAS PARA HOMBRE RUN</h3>
+                <p>
+                    <span class="Preciofinal">S/ 153.30</span> <span class="Descuento">-50%</span><br>
+                    <span class="Preciooriginal">S/ 249</span>
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            </article>
+            <!-- Articulo 03 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen03.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS URBANAS REEBOK UNISEX RIDER V</h3>
+                <p>
+                    <span class="Preciofinal">S/ 139</span> <span class="Descuento">-37%</span><br>
+                    <span class="Preciooriginal">S/ 219</span>
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 04 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen04.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS NIKE PARA HOMBRE M NIKE LEGEND ESSENTIAL 3</h3>
+                <p>
+                    <span class="Preciofinal">S/ 219</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 05 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen05.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS URBANAS ADIDAS PARA HOMBRE BREAKNET</h3>
+                <p>
+                    <span class="Preciofinal">S/ 167.20</span> <span class="Descuento">-20%</span><br>
+                    <span class="Preciooriginal">S/ 209</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 06 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen06.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS URBANAS ADIDAS PARA HOMBRE BREAKNET</h3>
+                <p>
+                    <span class="Preciofinal">S/ 189.20</span> <span class="Descuento">-10%</span><br>
+                    <span class="Preciooriginal">S/ 199.9</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 07 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen07.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS TRAINING PUMA PARA HOMBRE TAPER AZUL</h3>
+                <p>
+                    <span class="Preciofinal">S/ 189.20</span> <span class="Descuento">-10%</span><br>
+                    <span class="Preciooriginal">S/ 199.9</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 08 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen08.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS RUNNING NEW BALANCE PARA HOMBRE M411RW2</h3>
+                <p>
+                    <span class="Preciofinal">S/ 149</span> <span class="Descuento">-47%</span><br>
+                    <span class="Preciooriginal">S/ 279</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 09 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen09.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS DEPORTIVAS ADIDAS UNISEX RESPONSE RUNNER SHOES ID7334</h3>
+                <p>
+                    <span class="Preciofinal">S/ 179</span> <span class="Descuento">-10%</span><br>
+                    <span class="Preciooriginal">S/ 199</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 10 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen10.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS DEPORTIVAS ADIDAS UNISEX RESPONSE RUNNER SHOES </h3>
+                <p>
+                    <span class="Preciofinal">S/ 179</span> <span class="Descuento">-10%</span><br>
+                    <span class="Preciooriginal">S/ 199</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 11 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen11.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS URBANAS NEW BALANCE </h3>
+                <p>
+                    <span class="Preciofinal">S/ 179</span> <span class="Descuento">-31%</span><br>
+                    <span class="Preciooriginal">S/ 159</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+            <!-- Articulo 12 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+                <picture>
+                    <img class="imgProduct" src="Imagen12.jpg" alt="">
+                </picture>
+                <!-- Descripcion -->
+                <h3>ZAPATILLAS URBANAS NIKE </h3>
+                <p>
+                    <span class="Preciofinal">S/ 279</span> <span class="Descuento">-31%</span><br>
+                    <span class="Preciooriginal">S/ 319</span>
+
+                </p>
+                <button class="btn btn-primary">Agregar</button>
+            </article>
+
+        </section>
+    </main>
+    <!-- Contenido del pie de página -->
+    <footer>
+        <div>
+            <p>Tienda de Zapatillas Compralo Ya!!</p>
+            <p>Dirección: Calle Belen 123, Cusco</p>
+            <p>Teléfono: 958 742565</p>
+        </div>
+    </footer>
+    <!-- codigo javascript boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- cargar javascript del proyecto -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

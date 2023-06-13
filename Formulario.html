@@ -1,0 +1,118 @@
+ <!-- input es una etiqueta sin cierre y tiene atributos -->
+<!-- label es un rotulo -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+    <!-- Estilo con boostrap primero -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- ESTILO css -->
+    <!-- Cargar el estilo personalizado -->
+    <link rel="stylesheet" href="Diseñov1.css">
+</head>
+<body>
+    <!--Formulario para la creacion de una cuenta-->
+
+    <!-- Usamos div y crea bloques por que imput es de tipo inline -->
+<!-- otra opcion es cambiar a bloque con un trasformacion un input style="diplay: block;" -->
+
+    <!-- clase contenedor -->
+    <main class="container">
+        <!-- clase fila -->
+
+        <div class="row justify-content-md-center">
+            <form class="col-6 registroUsuario p-5 px-5 py-4 " id="formCreateAccount" action="recibido.html" method="get">
+                <!-- placeholder ayuda para poner etiqueta de referencia  -->
+                <!-- Entrada de Nomebre -->
+                <h2>CREAR CUENTA</h2>
+                <div class="mb-3">
+                    <!-- label pone titulo a una entrada, -->
+                    <label class="form-label" for="txtName">Nombre</label>
+                    <!-- size cambia el tamaño del cuadro pero es mejor usar style -->
+                    <input class="form-control" type="text" name="firtsname" id="txtName" maxlength="50" required>
+                </div class="mb-3">
+                <!-- entrada de apellido -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtLastName">Apellido</label>
+                    <input class="form-control" type="text" name="lastname" id="txtLastName" maxlength="50" required>
+                </div>
+                <!-- entrada de Dni -->
+                <div class="mb-3">
+                    <label class="form-label" for="intDNI">Dni</label>
+                    <input class="form-control" type="text" name="dni" id="intDNI" maxlength="8" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="txtemail">Correo electronico</label>
+                    <input class="form-control" type="email" name="email" id="txtemail" maxlength="40" required>
+                </div>
+            
+            
+                <div class="mb-3">
+                    <label class="form-label" for="intFechaN">fecha de nacimiento</label>
+                    <input class="form-control" type="date" name="fechan" id="intFechaN" min="1970-12-31" max="2005-12-31" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="txtUser">Usuario</label>
+                    <input class="form-control" type="text" name="user" id="txtUser" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="txtPassword">contraseña</label>
+                    <input class="form-control" type="password" name="password" id="txtPassword" maxlength="20" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="txtFone">Nro celular</label>
+                    <input class="form-control" type="tel" name="cel" id="txtFone" maxlength="13">
+                </div>
+                <!-- entrada de radio buton -->
+                <div class="mb-3">
+                    <p class="form-label">sexo</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="txtMasculino" value="M" checked>
+                        <label class="form-check-label" for="txtMasculino" style="display:inline">Masculino</label>
+            
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="txtFemenino" value="F">
+                        <label class="form-check-label" for="txtFemenino" style="display:inline">Femenino</label>
+                    </div>
+            
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="txtAddress1">direccion</label>
+                    <input class="form-control" type="text" name="address1" id="txtAddress1" required>
+                    <input class="form-control" type="text" name="address2" id="txtAddress2" required>
+                </div>
+                <!-- entrada acepta las condicionese sin valor -->
+                <div class="mb-3">
+                    <div class="form-check">
+                        <label class="form-check-label" for="bol">Acepta las <a href="#">condiciones</a> para crear una cuenta
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="bolAccept ">
+                    </div>
+            
+            
+                </div>
+            
+                <!-- entrda de submit(tipo enviar ) boton -->
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+            
+                </div>
+            
+            
+            </form>
+
+        </div>
+
+        
+       
+    </main>
+    
+   
+    <!-- enviar informacion con dos metodos get y post -->
+</body>
+</html>

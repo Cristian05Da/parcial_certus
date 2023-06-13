@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Rowdies & display=swap');
+/* Estilo global */
+*{
+    font-family:   Courier, monospace;
+    font-size: 1.05em;
+    color: #1c1c1c;
+    box-sizing: border-box;
+}
+/*Estilo titulo*/
+header > h1{
+    font-size: 1.5em;
+    font-family: "Bebas+Neue",cursive;
+    margin: 0px;
+    text-align: center;
+    color: #0D0D0D;
+
+}
+/* Estilo de cabecera */
+header{
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color:#A6A6A6;
+    background-position: center;
+    background-size: cover;
+   
+    
+}
+
+/* Estilo de body*/
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* Estilo para h2 en el encabezado */
+header> h2{
+    margin: 0px;
+    text-align: center;
+    font-size: 1em;
+    color: #2D3E40;
+
+}
+
+#carritovacio{
+    height: 300px;
+}
+
+/* Estilo para page Catalogo */
+
+.pageCatalogo{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+/* Etilo para las imagenes */
+.imgProduct{
+    height: 250px;
+    width: 100%; 
+    max-width: 100%;
+}
+
+/* Estilo para los articulos */
+article{
+
+    border-bottom: 2px solid #A6A6A6; /* Borde inferior */
+}
+article:hover{
+    border:#0D0D0D 2px solid;
+}
+
+/* Estilo de texto del article*/
+article > h3 {
+    margin: 6px;
+    font-size: 0.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Estilo de precio original */
+.Preciooriginal{
+    text-decoration: line-through;
+    color: #717171;
+    font-size: 0.9em;
+
+}
+/* Estilo de descuento */
+.Descuento {
+    font-weight: bold;
+    color:white;
+    background: red; /* Color de fondo de la caja */
+    padding: 4px; 
+    font-size: 0.7em;
+    border-radius: 5px;
+
+  }
+
+/* Estilo de precio final */
+.Preciofinal{
+    color: #262626;
+    font-weight: 550;
+}
+
+/* Estilo de boton */
+
+button{
+    border-radius: 5px;
+    background-color: #A6A6A6;
+    margin: 0px;
+    color: white;
+    border: 0px;
+
+}
+/* Estilo de pie de pagina */
+
+footer {
+    background-color: #595959;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: 0px;
+  }
+
+  /* contacto de whap */
+#contacto{
+    width: 64px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+
+}

@@ -1,0 +1,14 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(fondo.jfif);
+    background-attachment: fixed;
+}
+
+.registroUsuario{
+    background: white;
+}
+#txtAddress1{
+    margin-bottom: 8px;
+    
+}
